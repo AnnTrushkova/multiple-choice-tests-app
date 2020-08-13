@@ -1,0 +1,84 @@
+.app-content {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle farthest-corner at 100px 50px, #FBF2EB, #352A3B);
+  overflow: hidden !important;
+  display: flex;
+  justify-content: center;
+}
+
+.card-content {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  margin: 20px 0;
+  font-size: 50px;
+  color: #4a4a97;
+}
+
+.start-button {
+  width: 150px;
+  height: 30px;
+  text-decoration: none;
+  background-color: #4a4a97;
+  color: #FBF2EB;
+  cursor: pointer;
+  border: none;
+}
+
+.questions-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid rgba(255, 48, 48, 0.27);
+  border-radius: 4px;
+  min-width: 650px;
+  min-height: 400px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.question-number {
+  font-size: large;
+}
+
+.question-text {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.select-button {
+  text-decoration: none;
+  padding: 5px 0;
+  margin: 5px 0;
+  min-width: 400px;
+  height: 40px;
+  background-color: #75758b;
+  border: none;
+  cursor: pointer;
+}
+
+.select-button:hover {
+  background-color: rgba(117, 117, 139, 0.6);
+}
+
+.next-button {
+  width: 150px;
+  height: 30px;
+  text-decoration: none;
+  background-color: #4a4a97;
+  color: #FBF2EB;
+  cursor: pointer;
+  border: none;
+}
+
+.next-button:hover {
+  background-color: #75758b;
+  color: black;
+}

@@ -1,6 +1,7 @@
 import React from 'react'
-//types
 import {AnswerObject} from '../App'
+import '../App.scss'
+
 
 type Props = {
     question: string;
@@ -16,16 +17,17 @@ const QuestionsCard: React.FC<Props> = (props) => {
     const {question, answers, callback, userAnswer, questionNr, totalQuestions} = props
 
     return (
-        <div>
-            <p className="number">
+        <div className="questions-content">
+            <p className="question-number">
                 Question: {questionNr} / {totalQuestions}
             </p>
-            <p dangerouslySetInnerHTML={{__html: question}}/>
+            <p dangerouslySetInnerHTML={{__html: question}} className="question-text"/>
 
             <div>
                 {answers.map((answer) => (
                     <div key={answer}>
                         <button
+                            className="select-button"
                             disabled={!!userAnswer}
                             onClick={callback}
                             value={answer}
